@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Managment System</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <div class="title">
+      School Mangment System
+      </div>
+      <div class="form">
+
+         <div class="inputfield">
+
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                    <div class="inputfield">
+                        <label>Student name</label>
+                        <label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Hanan Deek">
+                    </div>
+                    <div class="inputfield">
+                        <label>Student ID</label>
+
+                        <input type="number" name="idd" id="idd" placeholder="49595084848" >
+                    </div>
+                    <div class="inputfield">
+                        <label>Student GPA</label>
+
+                        <input  name="gpa" id="gpa"  type="number" placeholder="2.81">
+                    </div>
+
+                    <div  class="form-action-buttons">
+
+                        <button id="submit" type="submit"  >Add Student</button>
+                    </div>
+                </form>
+
+
+              </div>
+            </div>
+
+
+
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student id</th>
+                            <th>Student GPA</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
